@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/post-display-block",
+  "version": "0.1.0",
+  "title": "Post Display Block",
+  "category": "widgets",
+  "icon": "admin-post",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "category": {
+      "type": "string",
+      "default": ""
+    },
+    "numberOfPosts": {
+      "type": "number",
+      "default": 5
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "showThumbnail": {
+      "type": "boolean",
+      "default": true
+    },
+    "showExcerpt": {
+      "type": "boolean",
+      "default": true
+    },
+    "showContent": {
+      "type": "boolean",
+      "default": false
+    },
+    "showMeta": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "post-display-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
